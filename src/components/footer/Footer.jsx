@@ -12,27 +12,13 @@ const Footer = () => {
         <div className="footer" style={{backgroundImage: `url(${bg})`}}>
             <div className="footer__content container">
                 <div className="footer_content_logo">
-                    <div className="logo">
-                        <img src={logo} alt="" />
-                        <Link to="/">MovieZ</Link>
+                    <div className="logo" style={{alignItems:'center'}}>
+                    <Link to="/"><img src={logo} alt="" style={{width: 250}} /></Link>
                     </div>
-                </div>
-                <div className="footer_content_menus">
-                    <div className="footer_content_menu">
-                        <Link to="/">Home</Link>
-                        <Link to="/">Contact us</Link>
-                        
-                        <Link to="/">About us</Link>
                     </div>
-                    
-                    <div className="footer_content_menu">
-                        <Link to="/">You must watch</Link>
-                        <Link to="/">Recent release</Link>
-                        <Link to="/">Top IMDB</Link>
                     </div>
-                </div>
-            </div>
-        </div>
+                     </div>
+                
     );
 }
 
