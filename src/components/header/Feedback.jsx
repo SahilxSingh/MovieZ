@@ -17,6 +17,7 @@ export const Feedback = () => {
       
           setUserData({ ...userData, [name]: value });
         };
+        
       
         // connect with firebase
         const submitData = async (event) => {
@@ -25,7 +26,7 @@ export const Feedback = () => {
       
           if (firstName && lastName && phone && email && message) {
             const res = fetch(
-              "https://moviez-20fdd-default-rtdb.asia-southeast1.firebasedatabase.app/userHandledData.json",
+              "https://backend-e45aa-default-rtdb.firebaseio.com/userHandledData.json",
               {
                 method: "POST",
                 headers: {
